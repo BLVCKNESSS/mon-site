@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel ="stylesheet" href="style.css">
+    <title>exercice tp1</title>
+</head>
+<body>
+    
+<header>
+    <h1>Site Pour l'exercice du TP1</h1>
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+</header>
+
+<main>
+    <h2>Contacte-moi</h2>
+ 
+    <!--
+      <form> = le formulaire
+      action="traitement.php" : à l'envoi, les données partent vers ce fichier PHP
+      method="post"           : les données sont envoyées de façon "cachée"
+    -->
+
+    <form action="traitement.php" method="post" id="formulaire">
+ 
+      <label for="nom">Ton nom :</label>
+      <!-- name="nom" : PHP utilise pour récupérer la valeur -->
+      <input type="text" id="nom" name="nom">
+ 
+      <label for="email">Ton email :</label>
+      <input type="text" id="email" name="email">
+ 
+      <label for="message">Ton message :</label>
+      <textarea id="message" name="message" rows="5"></textarea>
+ 
+      <p id="erreur"></p>
+ 
+      <button type="submit">Envoyer</button>
+    </form>
+  </main>
+
+<footer>
+    <p>&copy; 2026 Mon Site. Tous droits réservés.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
